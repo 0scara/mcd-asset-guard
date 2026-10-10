@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="mcd-asset-guard banner">
+  <title>mcd-asset-guard · 麦当劳权益到期管家</title>
+  <rect width="1200" height="320" rx="18" fill="#12332A"/>
+
+  <rect x="72" y="70" width="104" height="28" rx="14" fill="#F2B233"/>
+  <text x="124" y="84" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="500" fill="#12332A">MCP Skill</text>
+
+  <text x="72" y="152" font-family="SF Mono, Menlo, Consolas, monospace" font-size="44" font-weight="600" fill="#FFFFFF">mcd-asset-guard</text>
+  <text x="72" y="194" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="500" fill="#F2B233">麦当劳权益到期管家</text>
+  <text x="72" y="230" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#9FB5AC">盘点积分与优惠券 · 计算时间价值 · 输出本周行动清单</text>
+
+  <rect x="72" y="254" width="88" height="30" rx="15" fill="none" stroke="#3E6B5A" stroke-width="1"/>
+  <text x="116" y="269" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#9FB5AC">资产盘点</text>
+  <rect x="172" y="254" width="88" height="30" rx="15" fill="none" stroke="#3E6B5A" stroke-width="1"/>
+  <text x="216" y="269" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#9FB5AC">时间价值</text>
+  <rect x="272" y="254" width="88" height="30" rx="15" fill="none" stroke="#3E6B5A" stroke-width="1"/>
+  <text x="316" y="269" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" fill="#9FB5AC">到期预警</text>
+
+  <g transform="translate(940,64) scale(1.5)">
+    <rect x="20" y="42" width="56" height="44" rx="9" fill="#F2B233"/>
+    <circle cx="20" cy="64" r="5.5" fill="#12332A"/>
+    <circle cx="76" cy="64" r="5.5" fill="#12332A"/>
+    <rect x="29" y="53" width="30" height="4" rx="2" fill="#12332A" opacity="0.45"/>
+    <rect x="29" y="62" width="22" height="4" rx="2" fill="#12332A" opacity="0.45"/>
+    <rect x="29" y="71" width="26" height="4" rx="2" fill="#12332A" opacity="0.45"/>
+    <line x1="65" y1="49" x2="65" y2="79" stroke="#12332A" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5"/>
+    <circle cx="95" cy="64" r="17" fill="#12332A" stroke="#F2B233" stroke-width="2.5"/>
+    <path d="M95 64 L95 53" stroke="#F2B233" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M95 64 L104 69" stroke="#F2B233" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="95" cy="64" r="2.5" fill="#F2B233"/>
+  </g>
+</svg>

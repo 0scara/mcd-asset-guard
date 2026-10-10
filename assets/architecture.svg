@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-label="mcd-asset-guard 架构图">
+  <title>mcd-asset-guard 调用链路</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#8FA79A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="520" rx="12" fill="#FFFFFF"/>
+
+  <rect x="350" y="40" width="300" height="48" rx="10" fill="#F2B233"/>
+  <text x="500" y="69" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#12332A">我的权益什么时候到期</text>
+
+  <path class="arr" d="M500 88 V114 H185 V140" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M500 88 V140" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M500 88 V114 H815 V140" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="140" width="290" height="80" rx="10" fill="#EAF0EC" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="64" y="170" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#12332A">A · 资产盘点</text>
+  <text x="64" y="192" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">积分四项 + 券列表 + 未领券</text>
+  <text x="64" y="210" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">按剩余天数排序</text>
+
+  <rect x="355" y="140" width="290" height="80" rx="10" fill="#EAF0EC" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="379" y="170" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#12332A">B · 积分去向决策</text>
+  <text x="379" y="192" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">抽奖期望值 vs 商城兑换价值</text>
+  <text x="379" y="210" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">差距 20% 内优先兑换</text>
+
+  <rect x="670" y="140" width="290" height="80" rx="10" fill="#EAF0EC" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="694" y="170" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#12332A">C · 消耗方案</text>
+  <text x="694" y="192" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">组合临期券 + 选品</text>
+  <text x="694" y="210" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#5A6F64">calculate-price 实测抵扣</text>
+
+  <path class="arr" d="M185 220 V256" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M500 220 V256" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M815 220 V256" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="256" width="920" height="120" rx="14" fill="#F5F7F5" stroke="#12332A" stroke-width="0.5"/>
+  <text x="72" y="282" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="14" font-weight="500" fill="#12332A">麦当劳 MCP Server · mcp.mcd.cn（Streamable HTTP）</text>
+
+  <rect x="72" y="294" width="111" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="127.5" y="312" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">now-time-info</text>
+  <rect x="195" y="294" width="132" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="261" y="312" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">query-my-account</text>
+  <rect x="339" y="294" width="132" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="405" y="312" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">query-my-coupons</text>
+  <rect x="483" y="294" width="139" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="552.5" y="312" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">available-coupons</text>
+
+  <rect x="72" y="336" width="139" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="141.5" y="354" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">query-lottery-info</text>
+  <rect x="223" y="336" width="160" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="303" y="354" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">mall-points-products</text>
+  <rect x="395" y="336" width="146" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="468" y="354" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">mall-product-detail</text>
+  <rect x="553" y="336" width="125" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="615.5" y="354" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">calculate-price</text>
+  <rect x="690" y="336" width="153" height="28" rx="6" fill="#FFFFFF" stroke="#C3D3C8" stroke-width="0.5"/>
+  <text x="766.5" y="354" text-anchor="middle" font-family="SF Mono, Menlo, Consolas, monospace" font-size="12" fill="#2F4A3D">query-nearby-stores</text>
+
+  <path class="arr" d="M185 376 V420" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M500 376 V420" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path class="arr" d="M815 376 V420" fill="none" stroke="#8FA79A" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="420" width="290" height="80" rx="10" fill="#12332A"/>
+  <text x="64" y="450" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF">盘点表</text>
+  <text x="64" y="472" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">四项积分 + 临期券清单</text>
+  <text x="64" y="489" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">紧迫度四级分级</text>
+
+  <rect x="355" y="420" width="290" height="80" rx="10" fill="#12332A"/>
+  <text x="379" y="450" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF">决策结论</text>
+  <text x="379" y="472" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">一句话结论 + 依据</text>
+  <text x="379" y="489" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">估算值明确标注</text>
+
+  <rect x="670" y="420" width="290" height="80" rx="10" fill="#12332A"/>
+  <text x="694" y="450" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="500" fill="#FFFFFF">本周行动</text>
+  <text x="694" y="472" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">先花哪张券</text>
+  <text x="694" y="489" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" fill="#9FB5AC">配到具体一餐</text>
+</svg>
